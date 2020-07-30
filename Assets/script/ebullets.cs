@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class ebullets : MonoBehaviour
 {   
-	public ParticleSystem ebulletBreak;
+	public ParticleSystem ebulletBreak; 
+	void start()
+	{
+		Destroy(gameObject,7f);
+	}
 
     void OnCollisionEnter2D(Collision2D other)
     {
