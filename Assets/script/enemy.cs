@@ -14,25 +14,21 @@ public class enemy : MonoBehaviour
 	GameObject player; 
 	float timer=0f;
 	
-    // Start is called before the first frame update
+  
     void Start()
     {
       player = GameObject.FindWithTag("Player"); 
       bullet  = GameObject.Find("bullets");
     }
 
-    // Update is called once per frame
+  
     void Update()
     {  timer+= Time.deltaTime;
        enemyGundir = player.transform.position  - enemyGun.transform.position;
        var angle  = Mathf.Atan2(enemyGundir.y,enemyGundir.x)*Mathf.Rad2Deg;
        enemyGun.transform.rotation =  Quaternion.AngleAxis(angle,Vector3.forward);  
       WaitForFire();
-       // if(Input.GetKeyDown(KeyCode.Z))
-       // {
-       // 	fire();
-       // }
-
+      
     }   
 
     void WaitForFire()
