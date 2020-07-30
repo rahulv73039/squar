@@ -19,7 +19,7 @@ public class gun : MonoBehaviour
        var angle  = Mathf.Atan2(dir.y,dir.x)*Mathf.Rad2Deg;
        transform.rotation =  Quaternion.AngleAxis(angle,Vector3.forward);
        
-       if(Input.GetKeyDown(KeyCode.F))
+       if(Input.GetMouseButtonDown(0))
        {  	
        	Vector3 velDir  =  Vector3.Normalize(dir);
        	GameObject instBullet  =  Instantiate(bullet,transform.position+velDir,Quaternion.identity) as GameObject;

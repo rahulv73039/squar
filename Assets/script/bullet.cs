@@ -12,7 +12,7 @@ public class bullet : MonoBehaviour
  		{
  			Destroy(gameObject);
  		} 
- 	if(coll.collider.tag == "wall")
+ 	if(coll.collider.tag == "wall" || coll.collider.tag == "ebullet")
  	{ 	
  		Instantiate(bulletParticle,transform.position,Quaternion.identity);
  		Destroy(gameObject);
