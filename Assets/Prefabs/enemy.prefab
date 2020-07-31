@@ -227,8 +227,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyGun: {fileID: 6009166077001644657}
   eBullet: {fileID: 7493949481036740562, guid: b238bef924922ca4089279e9b85b54b1, type: 3}
-  bullet: {fileID: 7493949481036740562, guid: 920199bcf64be91468ad085d0eb9802c, type: 3}
+  scoreUp: {fileID: 3024703261161307526, guid: aff9d0b84a9b6e24bbb3d49c68c9bb60, type: 3}
   deathEffect: {fileID: 6173232305754599566, guid: 7f24ae559b300fb4cb3ba2bdee60dcdc,
     type: 3}
   waitingTime: 1
   eBullspeed: 10
+  increment: 5

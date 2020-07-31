@@ -7,12 +7,12 @@ public class playerhealth : MonoBehaviour
 {
     public float maxHealth =100f; 
     public float damageAmount =20f;
-    public healthbar healthBar;
+    public healthbar healthBar; 
     float currentHealth ; 
 
 
     void Start()
-    {
+    {	
         currentHealth =  maxHealth ;
         healthBar.SetMaxHealth(currentHealth);
     }

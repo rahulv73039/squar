@@ -6,12 +6,14 @@ public class enemy : MonoBehaviour
 {  
 	public GameObject enemyGun;  
 	public GameObject eBullet;  
-	GameObject bullet; 
+	public scoreupdate scoreUp;
 	public ParticleSystem deathEffect;
 	public float waitingTime; 
-	public float eBullspeed;
+	public float eBullspeed; 
+	public float increment=5f;
 	Vector3 enemyGundir;  
 	GameObject player; 
+	GameObject bullet; 
 	float timer=0f;
 	
   
@@ -52,7 +54,8 @@ public class enemy : MonoBehaviour
      {
      	if(coll.collider.tag == "bullet")
      	{    
-     		Destroy(gameObject);
+     		Destroy(gameObject);  
+     		scoreUp.PointUp(increment);
      		Instantiate(deathEffect,transform.position,Quaternion.identity);
 
      	}
