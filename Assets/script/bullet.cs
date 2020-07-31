@@ -12,7 +12,7 @@ public class bullet : MonoBehaviour
  // Important -Use 2D suffix in 2D game it eats my 2-3 hours  
     void OnCollisionEnter2D(Collision2D coll)
  	{
- 		if(coll.collider.name == "enemy")
+ 		if(coll.collider.tag == "enemy")
  		{
  			Destroy(gameObject);
  		} 
