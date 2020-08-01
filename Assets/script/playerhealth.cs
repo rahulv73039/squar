@@ -7,7 +7,7 @@ public class playerhealth : MonoBehaviour
 {
     public float maxHealth =100f; 
     public float damageAmount =20f;
-    public healthbar healthBar; 
+    public healthbar healthBar; // way to access script other than FindObjectOfType<>();
     float currentHealth ; 
 
 
@@ -22,7 +22,10 @@ public class playerhealth : MonoBehaviour
     {
        if(currentHealth <=0)
        {	
-       		Destroy(gameObject);
+       		Destroy(gameObject); 
+       		FindObjectOfType<endgame>().ShowEndGame();
+
+
        } 
     } 
 

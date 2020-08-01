@@ -18,16 +18,7 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	// if(Input.GetKeyDown(KeyCode.W))
-     //    {    joint.enabled = true;
-     //    	joint.connectedAnchor  = new Vector2(transform.position.x,transform.position.y+3f);
-     //    	joint.distance = 1f ;
-
-     //    } 
-     //    if (Input.GetKeyUp(KeyCode.W))
-     //     { 
-     //     	joint.enabled = false;  
-     //    }  
+    	 
 	} 
 
     void FixedUpdate()

@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class scoreupdate : MonoBehaviour
 {	
-	 public score scoreNum; 
-	 static float currentScore = 0f;
+	  
+	 public static float currentScore = 0f;
     // Start is called before the first frame update
     void Start()
-    {
-     	scoreNum.UpdateScore(0f);   
+    {    //Better way to acces scripts 
+    	currentScore = 0f;
+    	FindObjectOfType<score>().UpdateScore(0f);   
     } 
     void Update()
     {
-    	scoreNum.UpdateScore(currentScore);
+    	FindObjectOfType<score>().UpdateScore(currentScore);
     }
     public void PointUp(float increment)
     {
