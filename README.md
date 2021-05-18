@@ -1,4 +1,5 @@
-A 2D Flying Tank PC game build from scratch using Unity v2019.3.7 and square png as asset. 
+ This game was developed by me as submission to 3-day long game jam Organised by GameDev Society, IIT Kanpur.
+ A self made 2D Flying Tank PC game build from scratch using Unity v2019.3.7 and square png as asset. 
 Scripts for game is present in Assets/script/
 
 This game is available on https://arahulv.itch.io/squar  <br/>
